@@ -1,2 +1,2 @@
 # Javascript-Advanced
-Advanced JS and ES6
+Advanced JS (ES6 & ES8)
