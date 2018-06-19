@@ -5,7 +5,7 @@ $(document).ready(function () {
 // Display Data:
 function display(title, data) {
     $(".container").append(`<h2>From ${title}</h2>`);
-    $(".container").append(`<p>From GET Requests: ${data}</p>`);
+    $(".container").append(`<p>${data}</p>`);
 }
 
 
