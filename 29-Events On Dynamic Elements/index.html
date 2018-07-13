@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events On Dynamic Elements</title>
+</head>
+
+<body>
+  <button id="initialBtn">Initial Button</button>
+  <div class="container">
+  
+  </div>
+
+  <script>
+    const button1 = document.querySelector("#initialBtn");
+    let i = 0;
+    
+    button1.addEventListener("click", function () {
+      document.querySelector(".container").innerHTML += `<button class="appendedButton">Appended Button ${i}</button>`;
+      i++;
+    });
+    
+    document.addEventListener("click", function(e) {
+      if (e.target && e.target.className == "appendedButton") {
+        alert(e.target.innerHTML);
+      }
+    });
+  </script>
+</body>
+</html>
