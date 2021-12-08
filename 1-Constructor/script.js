@@ -8,10 +8,8 @@ function Car(name, year, color) {
   }
 }
 
-
 var myCar1 = new Car("Volvo", 1992, "Red");
 var myCar2 = new Car("BMW", 1999, "Blue");
-
 
 console.log(myCar1);
 console.log(myCar2.printInfo());
